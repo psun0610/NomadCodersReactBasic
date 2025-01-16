@@ -25,7 +25,7 @@ function CoinTracker() {
   };
 
   return (
-    <div>
+    <section>
       <h1>The Coins! {!loading && `(${coins.length})`}</h1>
       {loading ? (
         <strong>Loading...</strong>
@@ -59,7 +59,7 @@ function CoinTracker() {
           coin.
         </h2>
       )}
-    </div>
+    </section>
   );
 }
 

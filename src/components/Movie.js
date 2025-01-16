@@ -5,7 +5,7 @@ export default function Movie({ movie }) {
   return (
     <article key={movie.id}>
       <img src={movie.medium_cover_image} alt={movie.title} />
-      <Link to={`/movie/${movie.id}`}>
+      <Link to={`${process.env.PUBLIC_URL}/movie/${movie.id}`}>
         <h2>{movie.title}</h2>
       </Link>
       <p>{movie.summary}</p>

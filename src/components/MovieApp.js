@@ -21,7 +21,7 @@ export default function MovieApp() {
   }, []);
 
   return (
-    <div>
+    <section>
       {loading ? (
         <h1>Loading...</h1>
       ) : (
@@ -31,6 +31,6 @@ export default function MovieApp() {
           ))}
         </div>
       )}
-    </div>
+    </section>
   );
 }

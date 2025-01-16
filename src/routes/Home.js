@@ -15,7 +15,7 @@ function Home() {
   return (
     <div>
       <h1>SELECT YOU WANT</h1>
-      <div>
+      <nav>
         {options.map((option) => (
           <div key={option.id}>
             <input
@@ -34,7 +34,7 @@ function Home() {
         )}
         {select === "coinTracker" && <CoinTracker />}
         {select === "movieApp" && <MovieApp />}
-      </div>
+      </nav>
     </div>
   );
 }

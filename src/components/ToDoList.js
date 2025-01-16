@@ -13,7 +13,7 @@ function ToDoList({ toDos, setToDos }) {
   };
 
   return (
-    <div>
+    <section>
       <h1>My ToDos {toDos.length}</h1>
       <form onSubmit={onSubmit}>
         <input
@@ -30,7 +30,7 @@ function ToDoList({ toDos, setToDos }) {
           <li key={index}>{toDo}</li>
         ))}
       </ul>
-    </div>
+    </section>
   );
 }
 

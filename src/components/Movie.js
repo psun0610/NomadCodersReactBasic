@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Movie({ movie }) {
   return (
-    <div key={movie.id}>
+    <article key={movie.id}>
       <img src={movie.medium_cover_image} alt={movie.title} />
       <Link to={`/movie/${movie.id}`}>
         <h2>{movie.title}</h2>
@@ -14,7 +14,7 @@ export default function Movie({ movie }) {
           <li key={index}>{genre}</li>
         ))}
       </ul>
-    </div>
+    </article>
   );
 }
 
